@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;700&family=Roboto:ital,wght@0,300;0,700;1,400&display=swap");
+body {
+    font-family: "Roboto";
+    background-color: #968d95;
+}
+
+#bannerColor {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background: #00d4ff;
+    background: linear-gradient(90deg, #00d4ff 0%, #02010b 0%, #414149 0%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 450px;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+.textos {
+    font-family: "Roboto";
+}
+
+.textos.textos__bold {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.textos.texto__parrafos {
+    font-size: 1rem;
+}
+
+.textos.texto__blanco {
+    color: #fafafa;
+}
+
+.carousel-inner {
+    max-height: 700px;
+}
+
+.dropdown-menu {
+    background-color: #fafafa;
+}
+
+.novedades {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-height: 250px;
+    padding: 15px;
+    height: 400px;
+}
+
+.novedades .novedades__content, .novedades .novedades__funcional, .novedades .novedades__musculacion {
+  width: 50%;
+}
+
+.novedades .novedades__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.novedades .novedades__funcional {
+  background-image: url("../assets/funcional.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 45vh;
+}
+
+.novedades .novedades__musculacion {
+  background-image: url("../assets/musculacion.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 45vh;
+}
+
+.boxContent {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.boxContent .boxContent__center {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.boxContent__center {
+  width: 50%;
+}
+
+.col-sm-6__centrar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.card .card__tamanio-min {
+    min-width: 250px;
+}
+
+.card .card__tamanio-max {
+    max-height: 309px;
+}
+
+form {
+    width: 450px;
+    margin: auto;
+    background: #24303c;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 7px;
+    padding: 10px 20px;
+}
+
+input, textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+}
+
+textarea {
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+}
+
+#footer {
+    background-color: #343a40;
+    color: #fff !important;
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+    max-height: 150px;
+}
+
+#footer #footer a {
+    text-decoration: none;
+}
+
+#footer .container-xl .container-xl__pad {
+    padding: 10px;
+}
+
+@media all and (max-width: 1024px) {
+  .novedades {
+    flex-direction: row;
+    min-height: 100vh;
+  }
+  .novedades .novedades__content, .novedades .novedades__funcional, .novedades .novedades__musculacion {
+    width: 100%;
+  }
+  #footer {
+    max-height: 500px;
+  }
+}
+/*# sourceMappingURL=estilos.css.map */

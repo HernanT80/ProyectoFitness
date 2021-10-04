@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="
+    sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    <title>TiempoFitness | Conocenos</title>
+</head>
+<body>
+	<div id="header" class="container-fluid px-0 bg-black">
+		<div class="container-xxl">
+			<nav class="navbar navbar-expand-lg navbar-dark  bg-dark"> 
+			  <a class="navbar-brand" href="index.html">Inicio</a>
+			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			  </button>
+  
+			  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+				<div class="navbar-nav">
+				  <a class="nav-link" href="actividades.html">Actividades</a>
+				  <a class="nav-link" href="conocenos.html">Conocenos</a>
+				  <a class="nav-link" href="sumate.html">Sumate Ya</a>
+				  <a class="nav-link" href="contacto.html">Contacto</a>
+				</div>
+				<!-- Example single danger button -->
+				<div class="btn-group">
+					<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					Sedes
+					</button>
+					<div class="dropdown-menu">
+					  <a class="dropdown-item" href="#">Llavallol</a>
+					  <a class="dropdown-item" href="#">Lomas de Zamora</a>
+					  <div class="dropdown-divider"></div>
+					  <a class="dropdown-item" href="sumate.html">Sumate Ya</a>
+					</div>
+				</div>       
+			  </div>
+			  <div class="form-inline">
+				<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+				  Solicitar Turno
+			   </button>
+			  </div>
+			</nav>
+        </div>
+    </div>
+	<div id="main">
+		<div id="bannerColor">
+			<p class="textos textos__bold texto__blanco">ESTEMOS EN CONTACTO</p>
+			<p class="textos textos__bold texto__blanco">0800-555-7894 Fitness@hotmail.com</p>
+		</div>
+		<div class="centrar">
+			<p class="textos textos__bold text-center pt-3">Completa tus datos y te contactamos</p>
+		</div>
+		<form method="GET" action="index.html">
+			<input type="text" name="inp_nombre" id="nombre" value="" placeholder="Ingresa tu nombre">
+			<input type="text" name="inp_telefono" id="telefono" value="" placeholder="Ingresa tu telefono">
+			<input type="text" name="inp_email" id="nombre" value="" placeholder="Ingresa tu E-mail">
+			<textarea name="inp_mensaje" placeholder="Comentarios"></textarea>
+			<input type="submit" value="Enviar">
+			<input type="reset" value="Limpiar">
+		</form>
+	</div>
+	<div id="footer">
+		<div class="container-xl">
+			<div class="row text-center">
+				<div class="col-12 col-md-4 ">
+					<p class="font-weight-bold ">Contacto</p>
+					<ul class="list-unstyled">
+						<li><a class="text-light" href="">Whatsapp: 156687965</a></li>
+						<li><a class="text-light" href="">Email_ falso@hotmail.com</a></li>
+					</ul>
+				</div>
+				<div class="col-12 col-md-4">
+					<p class="font-weight-bold">Sedes</p>
+					<ul class="list-unstyled">
+						<li><a class="text-light" href="">Llavallol</a></li>
+						<li><a class="text-light" href="">Lomas de Zamora</a></li>
+					</ul>
+				</div>
+				<div class="col-12 col-md-4">
+					<p class="font-weight-bold">Redes Sociales</p>
+					<ul class="list-unstyled">
+						<li><a class="text-light" href="">Facebook</a></li>
+						<li><a class="text-light" href="">Instagram</a></li>
+						<li><a class="text-light" href="">Twitter</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+    </div>
+</body>
+</html>
