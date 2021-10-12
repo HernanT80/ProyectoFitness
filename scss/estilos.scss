@@ -1,9 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;700&family=Roboto:ital,wght@0,300;0,700;1,400&display=swap");
+@import "variables";
+
 body {
     font-family: "Roboto";
-    background-color: #968d95;
+    background-color: $colorBody;
+    color:$colorFontGray;
 }
-
 
 #bannerColor {
     display: flex;

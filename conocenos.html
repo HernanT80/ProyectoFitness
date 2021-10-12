@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="
     sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    <link rel="stylesheet" type="text/css" href="scss/estilos.css">
     <title>TiempoFitness | Las mejores sedes</title>
 </head>
 <body>
@@ -43,13 +43,24 @@
 			<p class="textos textos__bold text-center pt-3">Prueba sin cargo</p>
 		</div>	
 		<div>
-			<form method="GET" action="index.html">
-				<input type="text" name="inp_nombre" id="nombre" value="" placeholder="Ingresa tu nombre">
-				<input type="text" name="inp_apellido" id="apellido" value="" placeholder="Ingresa tu apellido">
-				<input type="text" name="inp_email" id="email" value="" placeholder="Ingresa tu E-mail">
-				<textarea name="inp_mensaje" placeholder="Comentarios"></textarea>
-				<input type="submit" value="Enviar">
-				<input type="reset" value="Limpiar">
+			<form action="/action_page.php">
+				<div class="form-group">
+				  <label for="email">Nombre:</label>
+				  <input type="email" class="form-control" placeholder="Ingresar nombre" id="nombre">
+				</div>
+				<div class="form-group">
+				  <label for="pwd">Apellido:</label>
+				  <input type="password" class="form-control" placeholder="Ingresar apellido" id="apellido">
+				</div>
+				<div class="form-group">
+					<label for="email">Email:</label>
+					<input type="email" class="form-control" placeholder="Ingresar email" id="email">
+				</div>
+				<div class="form-group">
+					<label for="comment">Comentarios:</label>
+					<textarea class="form-control" rows="5" id="comment"></textarea>
+				</div>
+				<button type="submit" class="btn btn-primary">Enviar</button>
 			</form>
 			</div>
 		</div>	
