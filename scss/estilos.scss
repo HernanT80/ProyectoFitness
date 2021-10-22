@@ -6,7 +6,19 @@ body {
     background-color: $colorBody;
     color:$colorFontGray;
 }
-
+.navbar{
+   
+    background: transparent!important;
+    width: 100%;
+    z-index: 10;
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+}
+fixed-top {
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
 #bannerColor {
     display: flex;
     flex-direction: column;
