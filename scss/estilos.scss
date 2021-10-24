@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;700&family=Roboto:ital,wght@0,300;0,700;1,400&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Gluten:wght@300;400;700&family=Montserrat:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap');
 @import "variables";
 
 body {
@@ -6,18 +6,23 @@ body {
     background-color: $colorBody;
     color:$colorFontGray;
 }
-.navbar{
-   
-    background: transparent!important;
-    width: 100%;
-    z-index: 10;
-    border-bottom: 1px solid rgba(255,255,255,0.3);
+
+.navLog a{
+    font-family: "Gluten";
+    font-size: 2rem;
+    padding: 10px 15px;
+    text-align: center;
 }
-fixed-top {
-    position: fixed;
-    right: 0;
-    left: 0;
-    z-index: 1030;
+.navg a{
+    color: #fafafa!important;
+    font-family: "Montserrat";
+    font-size: 1rem;
+    padding: 10px 15px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.navg a:hover{
+    background-color: rgb(44, 41, 41);
 }
 #bannerColor {
     display: flex;
@@ -171,16 +176,3 @@ textarea {
     padding: 10px;
 }
 
-@media all and (max-width: 1024px) {
-  .novedades {
-    flex-direction: row;
-    min-height: 100vh;
-  }
-  .novedades .novedades__content, .novedades .novedades__funcional, .novedades .novedades__musculacion {
-    width: 100%;
-  }
-  #footer {
-    max-height: 500px;
-  }
-}
-/*# sourceMappingURL=estilos.css.map */
