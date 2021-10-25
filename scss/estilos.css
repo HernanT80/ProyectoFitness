@@ -214,19 +214,19 @@ textarea {
   max-width: 100%;
 }
 
-#footer {
-  background-color: #343a40;
-  color: #fff !important;
-  padding-bottom: 1.5rem;
-  padding-top: 1.5rem;
-  max-height: 150px;
-}
-
-#footer #footer a {
-  text-decoration: none;
-}
-
-#footer .container-xl .container-xl__pad {
-  padding: 10px;
+@media all and (max-width: 1024px) {
+  .novedades {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    min-height: 100vh;
+  }
+  .novedades .novedades__content, .novedades .novedades__funcional, .novedades .novedades__musculacion {
+    width: 100%;
+  }
+  #footer {
+    max-height: 500px;
+  }
 }
 /*# sourceMappingURL=estilos.css.map */
