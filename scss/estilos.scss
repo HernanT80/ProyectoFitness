@@ -28,8 +28,19 @@ body {
     display: flex;
     flex-direction: column;
     position: relative;
-    background-color: #343a40;
     background: url("../assets/bannerEspejo.jpg") no-repeat center center;
+    background-size: cover;
+    font-size: 2rem;
+    height: 90vh;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .bannerApp {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background: url("../assets/app.jpg") no-repeat center center;
     background-size: cover;
     font-size: 2rem;
     height: 90vh;
@@ -114,7 +125,7 @@ body {
 }
 
 .novedades .novedades__funcional {
-  background-image: url("../assets/funcional.jpg");
+  background-image: url("../assets/functional2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
