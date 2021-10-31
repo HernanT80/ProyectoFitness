@@ -23,6 +23,21 @@ body {
 .navg a:hover{
     background-color: rgb(44, 41, 41);
 }
+
+.bannerActividades {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: #343a40;
+    background: url("../assets/bannerEspejo.jpg") no-repeat center center;
+    background-size: cover;
+    font-size: 2rem;
+    height: 90vh;
+    align-items: center;
+    justify-content: center;
+  }
+
+
 #bannerColor {
     display: flex;
     flex-direction: column;
@@ -42,7 +57,6 @@ body {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    background-image: url(../assets/machines.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 450px;  
@@ -186,7 +200,10 @@ textarea {
     max-width: 12rem;
     box-shadow: 0px 5px 5px 0px #adb5bd;
   }
-  
+footer{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
 
 @media all and (max-width: 1024px) {
   .novedades {
@@ -195,6 +212,10 @@ textarea {
   }
   .novedades .novedades__content, .novedades .novedades__funcional, .novedades .novedades__musculacion {
     width: 100%;
+  }
+  .bannerActividades {
+    font-size: 0.75rem;
+    max-height: 0vh;
   }
   #footer {
     max-height: 500px;
