@@ -48,6 +48,29 @@ body {
     justify-content: center;
   }
 
+  .bannerContacto {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background: url("../assets/bannerboxer.jpg") no-repeat;
+    background-size: cover;
+    font-size: 2rem;
+    height: 90vh;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .bannerSumate {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background: url("../assets/pesas.jpg") no-repeat;
+    background-size: cover;
+    font-size: 2rem;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+  }
 
 #bannerColor {
     display: flex;
@@ -224,10 +247,28 @@ footer{
   .novedades .novedades__content, .novedades .novedades__funcional, .novedades .novedades__musculacion {
     width: 100%;
   }
-  .bannerActividades {
+  .bannerActividades, .bannerApp, .bannerContacto, .bannerSumate {
     font-size: 0.75rem;
-    max-height: 0vh;
+    max-height: 35vh;
   }
+  form {
+    width: 300px;
+    margin-top: 10px;
+    border-radius: 3px;
+    padding: 5px 10px;
+}
+
+input, textarea {
+    margin-bottom: 10px;
+    padding: 4px;
+    box-sizing: border-box;
+    font-size: 10px;
+}
+
+textarea {
+    min-height: 75px;
+    max-height: 100px;
+}
   #footer {
     max-height: 500px;
   }
