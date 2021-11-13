@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Gluten:wght@300;400;700&family=Montserrat:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap');
 @import "variables";
+@import "mixin";
 
 body {
     font-family: "Roboto";
@@ -25,51 +26,24 @@ body {
 }
 
 .bannerActividades {
-    display: flex;
-    flex-direction: column;
-    position: relative;
     background: url("../assets/bannerEspejo.jpg") no-repeat center center;
-    background-size: cover;
-    font-size: 2rem;
-    height: 90vh;
-    align-items: center;
-    justify-content: center;
+    @include banner;
   }
 
   .bannerApp {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    background: url("../assets/app.jpg") no-repeat center center;
-    background-size: cover;
-    font-size: 2rem;
-    height: 90vh;
-    align-items: center;
-    justify-content: center;
+    @include banner;
+    background: url("../assets/app.jpg")  center center;
   }
 
   .bannerContacto {
-    display: flex;
-    flex-direction: column;
-    position: relative;
     background: url("../assets/bannerboxer.jpg") no-repeat;
-    background-size: cover;
-    font-size: 2rem;
-    height: 90vh;
-    align-items: center;
-    justify-content: center;
+    @include banner;
+
   }
 
   .bannerSumate {
-    display: flex;
-    flex-direction: column;
-    position: relative;
     background: url("../assets/pesas.jpg") no-repeat;
-    background-size: cover;
-    font-size: 2rem;
-    height: 100vh;
-    align-items: center;
-    justify-content: center;
+    @include banner;
   }
 
 #bannerColor {
@@ -106,12 +80,11 @@ body {
 }
 
 .textos.textos__bold {
-    font-size: 2rem;
-    font-weight: bold;
+  @include titulos;
 }
 
 .textos.texto__parrafos {
-    font-size: 1rem;
+  @include textoParrafos;
 }
 
 .carousel-inner {
@@ -148,14 +121,12 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  min-height: 45vh;
 }
 
 .novedades .novedades__musculacion {
-  background-image: url("../assets/musculacion.jpg");
+  background-image: url("../assets/musculacion2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 45vh;
 }
 
 .boxContent {

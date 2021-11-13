@@ -1,55 +1,204 @@
-@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;700&family=Roboto:ital,wght@0,300;0,700;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gluten:wght@300;400;700&family=Montserrat:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap");
 body {
-    font-family: "Roboto";
-    background-color: #968d95;
+  font-family: "Roboto";
+  background-color: #1c1c1c;
+  color: #757575;
+}
+
+.navLog a {
+  font-family: "Gluten";
+  font-size: 2rem;
+  padding: 10px 15px;
+  text-align: center;
+}
+
+.navg a {
+  color: #fafafa !important;
+  font-family: "Montserrat";
+  font-size: 1rem;
+  padding: 10px 15px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.navg a:hover {
+  background-color: #2c2929;
+}
+
+.bannerActividades {
+  background: url("../assets/bannerEspejo.jpg") no-repeat center center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 2rem;
+  height: 90vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.bannerApp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 2rem;
+  height: 90vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: url("../assets/app.jpg") center center;
+}
+
+.bannerContacto {
+  background: url("../assets/bannerboxer.jpg") no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 2rem;
+  height: 90vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.bannerSumate {
+  background: url("../assets/pesas.jpg") no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 2rem;
+  height: 90vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #bannerColor {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    background: #00d4ff;
-    background: linear-gradient(90deg, #00d4ff 0%, #02010b 0%, #414149 0%);
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 450px;
-    align-items: center;
-    justify-content: center;
-    padding: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background: #00d4ff;
+  background: -webkit-gradient(linear, left top, right top, from(#00d4ff), color-stop(0%, #02010b), color-stop(0%, #414149));
+  background: linear-gradient(90deg, #00d4ff 0%, #02010b 0%, #414149 0%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 30px;
+}
+
+#banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 450px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 30px;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .textos {
-    font-family: "Roboto";
+  font-family: "Roboto";
 }
 
 .textos.textos__bold {
-    font-size: 2rem;
-    font-weight: bold;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fafafa;
 }
 
 .textos.texto__parrafos {
-    font-size: 1rem;
-}
-
-.textos.texto__blanco {
-    color: #fafafa;
+  font-size: 1rem;
 }
 
 .carousel-inner {
-    max-height: 700px;
+  max-height: 700px;
 }
 
 .dropdown-menu {
-    background-color: #fafafa;
+  background-color: #fafafa;
 }
 
 .novedades {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    min-height: 250px;
-    padding: 15px;
-    height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  min-height: 250px;
+  padding: 15px;
+  height: 400px;
 }
 
 .novedades .novedades__content, .novedades .novedades__funcional, .novedades .novedades__musculacion {
@@ -57,44 +206,67 @@ body {
 }
 
 .novedades .novedades__content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 20px;
-    box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .novedades .novedades__funcional {
-  background-image: url("../assets/funcional.jpg");
+  background-image: url("../assets/functional2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  min-height: 45vh;
 }
 
 .novedades .novedades__musculacion {
-  background-image: url("../assets/musculacion.jpg");
+  background-image: url("../assets/musculacion2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 45vh;
 }
 
 .boxContent {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 20px;
-    box-sizing: border-box;
-    width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
 }
 
 .boxContent .boxContent__center {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 20px;
-    box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .boxContent__center {
@@ -102,67 +274,106 @@ body {
 }
 
 .col-sm-6__centrar {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 20px;
-    box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
+
 .card .card__tamanio-min {
-    min-width: 250px;
+  min-width: 250px;
 }
 
 .card .card__tamanio-max {
-    max-height: 309px;
+  max-height: 309px;
 }
 
 form {
-    width: 450px;
-    margin: auto;
-    background: #24303c;
-    box-sizing: border-box;
-    margin-top: 20px;
-    border-radius: 7px;
-    padding: 10px 20px;
+  width: 450px;
+  margin: auto;
+  background: #24303c;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-top: 20px;
+  border-radius: 7px;
+  padding: 10px 20px;
 }
 
 input, textarea {
-    width: 100%;
-    margin-bottom: 20px;
-    padding: 7px;
-    box-sizing: border-box;
-    font-size: 17px;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 7px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 17px;
 }
 
 textarea {
-    min-height: 100px;
-    max-height: 200px;
-    max-width: 100%;
+  min-height: 100px;
+  max-height: 200px;
+  max-width: 100%;
 }
 
-#footer {
-    background-color: #343a40;
-    color: #fff !important;
-    padding-bottom: 1.5rem;
-    padding-top: 1.5rem;
-    max-height: 150px;
+.testimonials {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
 }
 
-#footer #footer a {
-    text-decoration: none;
+.testimonials .testimonial-item {
+  max-width: 18rem;
 }
 
-#footer .container-xl .container-xl__pad {
-    padding: 10px;
+.testimonials .testimonial-item img {
+  max-width: 12rem;
+  -webkit-box-shadow: 0px 5px 5px 0px #adb5bd;
+          box-shadow: 0px 5px 5px 0px #adb5bd;
+}
+
+footer {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 @media all and (max-width: 1024px) {
   .novedades {
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     min-height: 100vh;
   }
   .novedades .novedades__content, .novedades .novedades__funcional, .novedades .novedades__musculacion {
     width: 100%;
+  }
+  .bannerActividades, .bannerApp, .bannerContacto, .bannerSumate {
+    font-size: 0.75rem;
+    max-height: 35vh;
+  }
+  form {
+    width: 300px;
+    margin-top: 10px;
+    border-radius: 3px;
+    padding: 5px 10px;
+  }
+  input, textarea {
+    margin-bottom: 10px;
+    padding: 4px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    font-size: 10px;
+  }
+  textarea {
+    min-height: 75px;
+    max-height: 100px;
   }
   #footer {
     max-height: 500px;

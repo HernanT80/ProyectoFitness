@@ -1,0 +1,19 @@
+@mixin titulos{
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fafafa;
+}
+@mixin textoParrafos{
+    font-size: 1rem;
+}
+@mixin banner{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 2rem;
+    height: 90vh;
+    align-items: center;
+    justify-content: center;
+}
